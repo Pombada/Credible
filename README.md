@@ -2,7 +2,10 @@ The program Credible checks the validity of a credit card by using Luhn's algori
 <img width="380" height="256" alt="image" src="https://github.com/user-attachments/assets/ea782084-cb5d-4b22-b84c-22ddca872b22" />
 A succesful attempt will give us the desired result of checking whether the credit card is credible or not.
 <img width="174" height="133" alt="image" src="https://github.com/user-attachments/assets/2356b45b-a047-40de-b783-f65bc9f81ac8" />
+A failed attempt will be displayed as the following.
 <img width="483" height="298" alt="image" src="https://github.com/user-attachments/assets/cb8fbc3d-148a-4da6-a2b6-649d899324e4" />
 Fewer numbers than 16 will result in an error (The program won't allow you to type beyond 16 digits anyway!)
 <img width="407" height="291" alt="image" src="https://github.com/user-attachments/assets/e203127b-c79a-4ca7-b64c-dbf9cf66ac18" />
-
+Using windows GUI (since the program is minimal) we achive a desired result of a system that can prevent sending messages to credit card compenies servers by checking before hand the inputed number to be correct or not.
+Saving requests on servers-saving time and money for both sides. (Can also be used to counter hacking attempts of complete brute force over websites since if a hacker simply tries all the numbers, those that won't meet 
+the criteria won't even be sent to the server).
