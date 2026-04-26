@@ -20,7 +20,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
             hwnd, NULL, NULL, NULL
         );
 
-        SendMessage(hEdit, EM_SETLIMITTEXT, 16, 0);
+        SendMessage(hEdit, EM_SETLIMITTEXT, 19, 0);
 
         // Button (centered under input)
         CreateWindow(
@@ -37,13 +37,13 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
             char buffer[32];
             GetWindowText(hEdit, buffer, sizeof(buffer));
 
-            if (strlen(buffer) == 16) {
+            if (strlen(buffer)>= 12 && strlen(buffer)<=19) {
                 if (Luhn_algorithm(buffer)) MessageBox(hwnd, "This is a real credit card!", "Credible!", MB_OK);
                 else {
                     MessageBox(hwnd, "The following credit card number doesn't exist!", "Non-Credible :(", MB_OK);
                 }
             } else {
-                MessageBox(hwnd, "Must be exactly 16 digits", "Error", MB_OK);
+                MessageBox(hwnd, "Must be at least 12 digits!", "Error", MB_OK);
             }
         }
             break;
