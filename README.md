@@ -9,3 +9,4 @@ Fewer numbers than 16 will result in an error (The program won't allow you to ty
 Using windows GUI (since the program is minimal) we achive a desired result of a system that can prevent sending messages to credit card compenies servers by checking before hand the inputed number to be correct or not.
 Saving requests on servers-saving time and money for both sides. (Can also be used to counter hacking attempts of complete brute force over websites since if a hacker simply tries all the numbers, those that won't meet 
 the criteria won't even be sent to the server).
+Update: New version accepts cards lengths 12-19 (old visas to the newest cards!)
